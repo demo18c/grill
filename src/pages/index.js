@@ -1,27 +1,13 @@
-import useStore from '@/helpers/store'
-import dynamic from 'next/dynamic'
-import Go from '@/components/dom/go'
+import React from 'react'
+import Navy from '@/components/dom/nav'
 
-const Sphere = dynamic(() => import('@/components/canvas/Sphere'), {
-  ssr: false,
-})
-
-const Page = ({ title }) => {
-  useStore.setState({ title })
+const Home = () => {
   return (
-    <>
-      <Sphere r3f />
-      <Go />
-    </>
+    <div>
+      <h1 color='white'>Home</h1>
+      <Navy />
+    </div>
   )
 }
 
-export default Page
-
-export async function getStaticProps() {
-  return {
-    props: {
-      title: 'Sphere',
-    },
-  }
-}
+export default Home

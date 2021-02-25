@@ -6,7 +6,7 @@
   * {
     box-sizing: border-box;
   }
-  
+
   html,
   body,
   #__next {
@@ -17,7 +17,6 @@
     overflow: hidden;
   }
   html {
-    background-color: #000;
+    background-color: #e7d0a2;
   }
-  
 }
